@@ -37,9 +37,28 @@ header {
 }
 
 table {
-  border-collapse: collapse; /* убираем зазоры между ячейками */
-  width: 100%; /* таблица занимает всю ширину родителя */
- border: none;
+    border-collapse: collapse; /* убираем зазоры между ячейками */
+    width: 100%; /* таблица занимает всю ширину родителя */
+    border: none;
+    table-layout: fixed;
+}
+
+td:nth-child(1) {
+    width: 30%;
+    vertical-align: top; /* Изображения и текст выравнены по верхней части */
+}
+
+td:nth-child(2) {
+    width: 70%;
+    vertical-align: top;
+    padding-left: 20px; /* Добавляем немного отступа для улучшения читаемости */
+    text-align: center; /* Горизонтальное выравнивание по центру */
+
+}
+
+.tree-image {
+    width: 100%;
+    height: auto;
 }
 
 table td {
